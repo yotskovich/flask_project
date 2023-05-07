@@ -19,14 +19,10 @@ def thermal_energy():
     return render_template("thermal_energy.html")
 
 
-@app.route("/electricity_production")
-def electricity_production():
-    return render_template("electricity_production.html")
-
-
 @app.route("/transport")
 def transport():
     return render_template("transport.html")
+
 
 if __name__=='__main__':
     app.run(debug=True)

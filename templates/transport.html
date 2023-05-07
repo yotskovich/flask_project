@@ -2,9 +2,113 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Transport</title>
+    <style>
+        body{
+            font-family: "Lato", sans-serif;
+            color: black;
+            background: white&sect; ;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
+
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+      }     
+
+
+      #text_settings{
+        margin-top: 50px;
+        overflow: hidden;
+        margin-right: 10px;
+
+    }
+
+    #img_settings{
+        float: right;
+    }
+
+    #img2{
+
+        width: 500px;
+        height: 250px;
+        float: right;
+    }
+</style>
+
 </head>
 <body>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+      <a href="/potential">Potential</a>
+      <a href="/thermal_energy">Thermal energy</a>
+      <a href="/transport">Transport</a>
+      </div>
+
+
+  <h1>Transport</h1>
+  <p id="topic-solar">Click on the element below to open the side navigation menu.</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>
+
+
+  <p id='text_settings'>Development of a solar-powered car has been an engineering goal since the 1980s. The World Solar Challenge is a biannual solar-powered car race, where teams from universities and enterprises compete over 3,021 kilometres (1,877 mi) across central Australia from Darwin to Adelaide. In 1987, when it was founded, the winner's average speed was 67 kilometres per hour (42 mph) and by 2007 the winner's average speed had improved to 90.87 kilometres per hour (56.46 mph).The North American Solar Challenge and the planned South African Solar Challenge are comparable competitions that reflect an international interest in the engineering and development of solar powered vehicles.
+    <br>
+    <img id="img_settings" src="https://s7g10.scene7.com/is/image/hyundaiautoever/hyundai-solar-roof-charging-system-01:Content%20Banner%20Mobile?wid=767&amp;hei=668">
+    Some vehicles use solar panels for auxiliary power, such as for air conditioning, to keep the interior cool, thus reducing fuel consumption.
+    <br>
+    <br>
+    In 1975, the first practical solar boat was constructed in England. By 1995, passenger boats incorporating PV panels began appearing and are now used extensively. In 1996, Kenichi Horie made the first solar-powered crossing of the Pacific Ocean, and the Sun21 catamaran made the first solar-powered crossing of the Atlantic Ocean in the winter of 2006&ndash;2007. There were plans to circumnavigate the globe in 2010.
+    <br>
+    <br>
+    In 1974, the unmanned AstroFlight Sunrise airplane made the first solar flight. On 29 April 1979, the Solar Riser made the first flight in a solar-powered, fully controlled, man-carrying flying machine, reaching an altitude of 40 ft (12 m). In 1980, the Gossamer Penguin made the first piloted flights powered solely by photovoltaics. This was quickly followed by the Solar Challenger which crossed the English Channel in July 1981. In 1990 Eric Scott Raymond in 21 hops flew from California to North Carolina using solar power. <br><br>Developments then turned back to unmanned aerial vehicles (UAV) with the Pathfinder (1997) and subsequent designs, culminating in the Helios which set the altitude record for a non-rocket-propelled aircraft at 29,524 metres (96,864 ft) in 2001. The Zephyr, developed by BAE Systems, is the latest in a line of record-breaking solar aircraft, making a 54-hour flight in 2007, and month-long flights were envisioned by 2010. As of 2016, Solar Impulse, an electric aircraft, is currently circumnavigating the globe. It is a single-seat plane powered by solar cells and capable of taking off under its own power. The design allows the aircraft to remain airborne for several days.
+    <br>
+A solar balloon is a black balloon that is filled with ordinary air. As sunlight shines on the balloon, the air inside is heated and expands, causing an upward buoyancy force, much like an artificially heated hot air balloon. Some solar balloons are large enough for human flight, but usage is generally limited to the toy market as the surface-area to payload-weight ratio is relatively high.</p>
+
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
 
 </body>
+
 </html>

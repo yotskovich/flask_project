@@ -1,76 +1,75 @@
-
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Main page</title>
-<style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main page</title>
+    <style>
 
-body {
-    font-family: "Lato", sans-serif;
-    color: floralwhite;
-    font-size: 30px;
-    background-image: url("file:///Users/mac/Desktop/TMS_Python/flaskProject/image%20/Sunset_over_the_gulf_of_Mexico_-_iss042e034066.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
+        body {
+            font-family: "Lato", sans-serif;
+            color: floralwhite;
+            font-size: 30px;
+            background-image: url("https://i.ibb.co/5Rcq3j4/Sunset-over-the-gulf-of-Mexico-iss042e034066.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
 
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
+        .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
 
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
-}
+        .sidenav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
 
-.sidenav a:hover {
-    color: #f1f1f1;
-}
+        .sidenav a:hover {
+            color: #f1f1f1;
+        }
 
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
+        .sidenav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
+        @media screen and (max-height: 450px) {
+          .sidenav {padding-top: 15px;}
+          .sidenav a {font-size: 18px;}
+      }
 
-.basic_text {
-    font-size: 18px;
-    border: 1px white; /* толщина и цвет рамки */
-    padding: 10px; /* расстояние между рамкой и текстом внутри */
-    margin: 10px; /* расстояние между рамкой и другими элементами на странице */
-    border-radius: 5px; /* скругление углов рамки */
-    height: 50px;
-    width: 700px;
-    padding-left: 60px;
-    padding-top: 30px;
-    line-height: 25px;
+      .basic_text {
+        font-size: 18px;
+        border: 1px white; /* толщина и цвет рамки */
+        padding: 10px; /* расстояние между рамкой и текстом внутри */
+        margin: 10px; /* расстояние между рамкой и другими элементами на странице */
+        border-radius: 5px; /* скругление углов рамки */
+        height: 50px;
+        width: 700px;
+        padding-left: 60px;
+        padding-top: 30px;
+        line-height: 25px;
 
-} 
+    } 
 
-#topic-solar{
-    font-size: 15px;
-}  
+    #topic-solar{
+        font-size: 15px;
+    }  
 
 
 </style>
@@ -79,31 +78,31 @@ body {
 <body>
 
 
-<div id="mySidenav" class="sidenav">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-  <a href="/about">Potential</a>
-  <a href="#">Thermal energy</a>
-  <a href="/about">Electricity production</a>
-  <a href="#">Transport</a>
-</div>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="/potential">Potential</a>
+      <a href="/thermal_energy">Thermal energy</a>
+      <a href="/transport">Transport</a>
+      
+  </div>
 
-<h2>Solar energy</h2>
-<p id="topic-solar">Click on the element below to open the side navigation menu.</p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>
+  <h2>Solar energy</h2>
+  <p id="topic-solar">Click on the element below to open the side navigation menu.</p>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ open</span>
 
-<p class="basic_text"> Solar energy is radiant light and heat from the Sun that is harnessed using a range of technologies such as solar power to generate electricity, solar thermal energy (including solar water heating), and solar architecture. It is an essential source of renewable energy, and its technologies are broadly characterized as either passive solar or active solar depending on how they capture and distribute solar energy or convert it into solar power. Active solar techniques include the use of photovoltaic systems, concentrated solar power, and solar water heating to harness the energy. Passive solar techniques include orienting a building to the Sun, selecting materials with favorable thermal mass or light-dispersing properties, and designing spaces that naturally circulate air.<br>
-<br>
-<br>In 2011, the International Energy Agency said that "the development of affordable, inexhaustible and clean solar energy technologies will have huge longer-term benefits. It will increase countries' energy security through reliance on an indigenous, inexhaustible, and mostly import-independent resource, enhance sustainability, reduce pollution, lower the costs of mitigating global warming .... these advantages are global".
+  <p class="basic_text"> Solar energy is radiant light and heat from the Sun that is harnessed using a range of technologies such as solar power to generate electricity, solar thermal energy (including solar water heating), and solar architecture. It is an essential source of renewable energy, and its technologies are broadly characterized as either passive solar or active solar depending on how they capture and distribute solar energy or convert it into solar power. Active solar techniques include the use of photovoltaic systems, concentrated solar power, and solar water heating to harness the energy. Passive solar techniques include orienting a building to the Sun, selecting materials with favorable thermal mass or light-dispersing properties, and designing spaces that naturally circulate air.<br>
+    <br>
+    <br>In 2011, the International Energy Agency said that "the development of affordable, inexhaustible and clean solar energy technologies will have huge longer-term benefits. It will increase countries' energy security through reliance on an indigenous, inexhaustible, and mostly import-independent resource, enhance sustainability, reduce pollution, lower the costs of mitigating global warming .... these advantages are global".
 
 </p>
 <script>
-function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-}
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
 
-function closeNav() {
-    document.getElementById("mySidenav").style.width = "0";
-}
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
 </script>
 
 </body>
